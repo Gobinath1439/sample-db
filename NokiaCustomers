@@ -1,0 +1,33 @@
+USE [sample-db]
+GO
+
+/****** Object:  Table [dbo].[NokiaCustomers]    Script Date: 28-08-2023 00:20:55 ******/
+DROP TABLE [dbo].[NokiaCustomers]
+GO
+
+/****** Object:  Table [dbo].[NokiaCustomers]    Script Date: 28-08-2023 00:20:56 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[NokiaCustomers](
+	[Customer_id] [int] NOT NULL,
+	[Customer _name] [varchar](50) NULL,
+	[Country_name] [varchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Customer_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
